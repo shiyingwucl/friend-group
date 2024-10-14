@@ -22,3 +22,13 @@ my_group = [{"Jill":{"age": 26,
                     "connection":{"John":"cousin",
                                   "Zalika":"landlord"}}
                     }]
+
+print(my_group[1,"age"])
+
+# def max_age(group):
+#     if group[1][age] < group[2]["age"]:
+#         print(group(1)["age"])
+#     else:
+#         return
+    
+# max_age(my_group)
