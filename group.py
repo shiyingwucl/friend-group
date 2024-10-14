@@ -22,5 +22,3 @@ my_group = [{"Jill":{"age": 26,
                     "connection":{"John":"cousin",
                                   "Zalika":"landlord"}}
                     }]
-
-print(my_group[1]["Zalika"])
