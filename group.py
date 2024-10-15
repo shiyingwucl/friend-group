@@ -25,18 +25,17 @@ my_group = [{"Jill":{"age": 26,
                                    }
                                    }]
 
-#returns the max age
 def max_age(friend_group):
-    ages = []
-    for person in friend_group:
-        for name in person.values():
-            age = name.get("age")
-            ages.append(age)
+    """returns the max age"""
+    ages = [name.get("age") for person in friend_group for name in person.values()]
     print(max(ages))
 
-def mean_relation():
-    pass
+def mean_relation(friend_group):
+    """mean number of the relations in the group"""
+    all_relations = [name.get("connection") for person in friend_group for name in person.values() for connection in ]
+    print(len(all_relations)/len(my_group))
+
 def max_age_with_relation():
     pass
 
-max_age(my_group)
+mean_relation(my_group)
