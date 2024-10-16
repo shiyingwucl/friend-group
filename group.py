@@ -32,10 +32,12 @@ def max_age(friend_group):
 
 def mean_relation(friend_group):
     """mean number of the relations in the group"""
-    all_relations = [name.get("connection") for person in friend_group for name in person.values() for connection in ]
-    print(len(all_relations)/len(my_group))
+    total_relations = [connection for person in friend_group for name in person.values() for connection in name.get("connection")]
+    print(len(total_relations)/len(friend_group))
 
-def max_age_with_relation():
-    pass
+def max_age_with_relation(friend_group):
+    """maximum age of people with atleast one relation"""
+
+
 
 mean_relation(my_group)
