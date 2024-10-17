@@ -53,5 +53,3 @@ def max_age_with_friend(friend_group):
                     with_friend.append(person)
     ages = [name.get("age") for person in with_friend for name in person.values()]
     print(max(ages))
-
-max_age_with_friend(my_group)
