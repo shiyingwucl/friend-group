@@ -1,3 +1,4 @@
+import json
 """An example of how to represent a group of acquaintances in Python."""
 
 # Your code to go here...
@@ -53,3 +54,9 @@ def max_age_with_friend(friend_group):
                     with_friend.append(person)
     ages = [name.get("age") for person in with_friend for name in person.values()]
     print(max(ages))
+
+with open ("friend_group","w")as file:
+    file.write(json.dumps(my_group))
+
+with open("friend_group","r") as file:
+    print(json.load(file))
